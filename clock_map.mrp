@@ -1,0 +1,211 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'clock'
+
+Design Information
+------------------
+Command Line   : map -ise D:/elevator/aclk/aclk.ise -intstyle ise -p
+xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o clock_map.ncd clock.ngd
+clock.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.46 $
+Mapped Date    : Tue Dec 18 20:55:42 2012
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    3
+Logic Utilization:
+  Number of Slice Flip Flops:            50 out of   9,312    1%
+  Number of 4 input LUTs:                67 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:             61 out of   4,656    1%
+    Number of Slices containing only related logic:      61 out of      61 100%
+    Number of Slices containing unrelated logic:          0 out of      61   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         112 out of   9,312    1%
+    Number used as logic:                67
+    Number used as a route-thru:         45
+  Number of bonded IOBs:                 30 out of     232   12%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Peak Memory Usage:  154 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out2s is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out2h is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out2m is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |             | Strength | Rate |              |          | Delay    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| change                             | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| clk                                | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| hour<0>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<1>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<2>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<3>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<4>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<5>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<6>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| hour<7>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<0>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<1>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<2>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<3>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<4>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<5>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<6>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| minute<7>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| mode<0>                            | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| mode<1>                            | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| reset                              | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
+| second<0>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<1>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<2>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<3>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<4>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<5>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<6>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| second<7>                          | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          | 0 / 0    |
+| turn                               | IBUF             | INPUT     | LVCMOS25    |          |      |              |          | 0 / 0    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clock/             |           | 29/91         | 0/50          | 45/112        | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | clock                     |
+| +a_contorl         |           | 0/35          | 0/26          | 0/37          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/a_contorl           |
+| ++a_clk_1Hz        |           | 31/31         | 26/26         | 33/33         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/a_contorl/a_clk_1Hz |
+| ++mux2_1_h         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/a_contorl/mux2_1_h  |
+| ++mux2_1_m         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/a_contorl/mux2_1_m  |
+| ++mux2_1_s         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/a_contorl/mux2_1_s  |
+| +counter_h         |           | 9/9           | 8/8           | 10/10         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/counter_h           |
+| +counter_m         |           | 9/9           | 8/8           | 10/10         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/counter_m           |
+| +counter_s         |           | 9/9           | 8/8           | 10/10         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | clock/counter_s           |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

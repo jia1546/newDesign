@@ -1,0 +1,17 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+NET "reset" LOC = D18;
+NET "mode[1]" LOC = N17;
+NET "mode[0]" LOC = H18;
+NET "turn" LOC = L14;
+NET "change" LOC = L13;
+NET "second[5]" LOC = D11;
+NET "second[4]" LOC = C11;
+NET "second[3]" LOC = F11;
+NET "second[2]" LOC = E11;
+NET "second[1]" LOC = E12;
+NET "second[0]" LOC = F12;
+NET "minute[1]" LOC = F9;
+NET "minute[0]" LOC = E9;

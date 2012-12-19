@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map K.31 on Tue Dec 18 20:55:43 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "mode<0>" LOCATE = SITE "H18" LEVEL 1;
+COMP "mode<1>" LOCATE = SITE "N17" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "turn" LOCATE = SITE "L14" LEVEL 1;
+COMP "minute<0>" LOCATE = SITE "E9" LEVEL 1;
+COMP "minute<1>" LOCATE = SITE "F9" LEVEL 1;
+COMP "second<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "second<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "second<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "second<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "second<4>" LOCATE = SITE "C11" LEVEL 1;
+COMP "reset" LOCATE = SITE "D18" LEVEL 1;
+COMP "second<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "change" LOCATE = SITE "L13" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

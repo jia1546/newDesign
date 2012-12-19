@@ -1,0 +1,205 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise D:/elevator/aclk/aclk.ise
+-intstyle ise -e 3 -s 5 -xml clock clock.ncd -o clock.twr clock.pcf -ucf
+clock.ucf
+
+Design file:              clock.ncd
+Physical constraint file: clock.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock change to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+hour<0>     |    8.362(R)|out2h             |   0.000|
+hour<1>     |    8.386(R)|out2h             |   0.000|
+hour<2>     |    7.934(R)|out2h             |   0.000|
+hour<3>     |    7.876(R)|out2h             |   0.000|
+hour<4>     |    8.449(R)|out2h             |   0.000|
+hour<5>     |    8.605(R)|out2h             |   0.000|
+hour<6>     |    7.881(R)|out2h             |   0.000|
+hour<7>     |    8.586(R)|out2h             |   0.000|
+minute<0>   |    9.896(R)|out2m             |   0.000|
+minute<1>   |   10.432(R)|out2m             |   0.000|
+minute<2>   |    8.809(R)|out2m             |   0.000|
+minute<3>   |    9.465(R)|out2m             |   0.000|
+minute<4>   |    8.866(R)|out2m             |   0.000|
+minute<5>   |    9.648(R)|out2m             |   0.000|
+minute<6>   |    9.070(R)|out2m             |   0.000|
+minute<7>   |    9.241(R)|out2m             |   0.000|
+------------+------------+------------------+--------+
+
+Clock mode<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+hour<0>     |    8.378(R)|out2h             |   0.000|
+hour<1>     |    8.402(R)|out2h             |   0.000|
+hour<2>     |    7.950(R)|out2h             |   0.000|
+hour<3>     |    7.892(R)|out2h             |   0.000|
+hour<4>     |    8.465(R)|out2h             |   0.000|
+hour<5>     |    8.621(R)|out2h             |   0.000|
+hour<6>     |    7.897(R)|out2h             |   0.000|
+hour<7>     |    8.602(R)|out2h             |   0.000|
+minute<0>   |   10.016(R)|out2m             |   0.000|
+minute<1>   |   10.552(R)|out2m             |   0.000|
+minute<2>   |    8.929(R)|out2m             |   0.000|
+minute<3>   |    9.585(R)|out2m             |   0.000|
+minute<4>   |    8.986(R)|out2m             |   0.000|
+minute<5>   |    9.768(R)|out2m             |   0.000|
+minute<6>   |    9.190(R)|out2m             |   0.000|
+minute<7>   |    9.361(R)|out2m             |   0.000|
+second<0>   |    9.008(R)|out2s             |   0.000|
+second<1>   |    9.064(R)|out2s             |   0.000|
+second<2>   |    9.187(R)|out2s             |   0.000|
+second<3>   |    8.946(R)|out2s             |   0.000|
+second<4>   |    8.948(R)|out2s             |   0.000|
+second<5>   |    9.007(R)|out2s             |   0.000|
+second<6>   |    8.756(R)|out2s             |   0.000|
+second<7>   |    8.772(R)|out2s             |   0.000|
+------------+------------+------------------+--------+
+
+Clock mode<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+hour<0>     |   10.534(R)|out2h             |   0.000|
+hour<1>     |   10.558(R)|out2h             |   0.000|
+hour<2>     |   10.106(R)|out2h             |   0.000|
+hour<3>     |   10.048(R)|out2h             |   0.000|
+hour<4>     |   10.621(R)|out2h             |   0.000|
+hour<5>     |   10.777(R)|out2h             |   0.000|
+hour<6>     |   10.053(R)|out2h             |   0.000|
+hour<7>     |   10.758(R)|out2h             |   0.000|
+minute<0>   |   12.172(R)|out2m             |   0.000|
+minute<1>   |   12.708(R)|out2m             |   0.000|
+minute<2>   |   11.085(R)|out2m             |   0.000|
+minute<3>   |   11.741(R)|out2m             |   0.000|
+minute<4>   |   11.142(R)|out2m             |   0.000|
+minute<5>   |   11.924(R)|out2m             |   0.000|
+minute<6>   |   11.346(R)|out2m             |   0.000|
+minute<7>   |   11.517(R)|out2m             |   0.000|
+second<0>   |    9.876(R)|out2s             |   0.000|
+second<1>   |    9.932(R)|out2s             |   0.000|
+second<2>   |   10.055(R)|out2s             |   0.000|
+second<3>   |    9.814(R)|out2s             |   0.000|
+second<4>   |    9.816(R)|out2s             |   0.000|
+second<5>   |    9.875(R)|out2s             |   0.000|
+second<6>   |    9.624(R)|out2s             |   0.000|
+second<7>   |    9.640(R)|out2s             |   0.000|
+------------+------------+------------------+--------+
+
+Clock turn to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+hour<0>     |    8.907(R)|out2h             |   0.000|
+hour<1>     |    8.931(R)|out2h             |   0.000|
+hour<2>     |    8.479(R)|out2h             |   0.000|
+hour<3>     |    8.421(R)|out2h             |   0.000|
+hour<4>     |    8.994(R)|out2h             |   0.000|
+hour<5>     |    9.150(R)|out2h             |   0.000|
+hour<6>     |    8.426(R)|out2h             |   0.000|
+hour<7>     |    9.131(R)|out2h             |   0.000|
+minute<0>   |   10.391(R)|out2m             |   0.000|
+minute<1>   |   10.927(R)|out2m             |   0.000|
+minute<2>   |    9.304(R)|out2m             |   0.000|
+minute<3>   |    9.960(R)|out2m             |   0.000|
+minute<4>   |    9.361(R)|out2m             |   0.000|
+minute<5>   |   10.143(R)|out2m             |   0.000|
+minute<6>   |    9.565(R)|out2m             |   0.000|
+minute<7>   |    9.736(R)|out2m             |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock change
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+change         |    4.068|         |         |         |
+mode<0>        |    4.068|         |         |         |
+mode<1>        |    4.068|         |         |         |
+turn           |    4.068|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.297|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mode<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+change         |    4.068|         |         |         |
+mode<0>        |    4.112|         |         |         |
+mode<1>        |    4.112|         |         |         |
+turn           |    4.068|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mode<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+change         |    4.068|         |         |         |
+mode<0>        |    4.112|         |         |         |
+mode<1>        |    4.112|         |         |         |
+turn           |    4.068|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock turn
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+change         |    4.068|         |         |         |
+mode<0>        |    4.068|         |         |         |
+mode<1>        |    4.068|         |         |         |
+turn           |    4.068|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Dec 18 20:55:53 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 95 MB
+
+
+
