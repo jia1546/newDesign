@@ -29,8 +29,8 @@ output[7:0] hour;
 output[7:0] minute;
 output[7:0] second;
 output alert;
-wire mbit;
-wire sbit;
+wire m_bit;
+wire s_bit;
 wire clk_h;
 wire clk_m;
 wire clk_s;
@@ -38,12 +38,12 @@ wire rst;
 
 counter a_counter(.clk_h(clk_h), .clk_m(clk_m), .clk_s(clk_s), .reset(rst), 
 						.hour(hour), .minute(minute), .second(second),
-						.mbit(mbit), .sbit(sbit));
+						.m_bit(m_bit), .s_bit(s_bit));
 
 control a_contorl(.clk(clk), .reset(reset), .mode(mode), 
 						.turn(turn), .change(change), .reset1(reset1),
 						.hour(hour), .minute(minute), .second(second),
-						.mbit(mbit), .sbit(sbit),
+						.m_bit(m_bit), .s_bit(s_bit),
 						.rst(rst), .clk_h(clk_h), .clk_m(clk_m), .clk_s(clk_s), .alert(alert));
 
 endmodule

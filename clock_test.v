@@ -103,8 +103,11 @@ module clock_test;
 		mode = 0;
 		#200
 		
+		//…Ë÷√ƒ÷÷”(03:02:XX)
 		mode = 2;
+		#1
 		turn = 1;
+		#1
 		change = 1;
 		#2
 		change = 0;

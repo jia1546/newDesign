@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: clock.prj
 
@@ -104,17 +104,19 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "ring.v" in library work
 Compiling verilog file "mux2_2.v" in library work
-Module <ring> compiled
 Compiling verilog file "mux2_1.v" in library work
 Module <mux2_2> compiled
-Compiling verilog file "counter60.v" in library work
+Compiling verilog file "ring.v" in library work
 Module <mux2_1> compiled
-Compiling verilog file "counter12.v" in library work
+Compiling verilog file "countFix.v" in library work
+Module <ring> compiled
+Compiling verilog file "counter60.v" in library work
+Module <countFix> compiled
+Compiling verilog file "counter24.v" in library work
 Module <counter60> compiled
 Compiling verilog file "alarmSet.v" in library work
-Module <counter12> compiled
+Module <counter24> compiled
 Compiling verilog file "counter.v" in library work
 Module <alarmSet> compiled
 Compiling verilog file "control.v" in library work
@@ -135,13 +137,15 @@ Analyzing hierarchy for module <counter> in library <work>.
 
 Analyzing hierarchy for module <control> in library <work>.
 
-Analyzing hierarchy for module <counter12> in library <work>.
+Analyzing hierarchy for module <counter24> in library <work>.
 
 Analyzing hierarchy for module <counter60> in library <work>.
 
 Analyzing hierarchy for module <alarmSet> in library <work>.
 
 Analyzing hierarchy for module <ring> in library <work>.
+
+Analyzing hierarchy for module <countFix> in library <work>.
 
 Analyzing hierarchy for module <mux2_2> in library <work>.
 
@@ -157,8 +161,8 @@ Module <clock> is correct for synthesis.
 Analyzing module <counter> in library <work>.
 Module <counter> is correct for synthesis.
  
-Analyzing module <counter12> in library <work>.
-Module <counter12> is correct for synthesis.
+Analyzing module <counter24> in library <work>.
+Module <counter24> is correct for synthesis.
  
 Analyzing module <counter60> in library <work>.
 Module <counter60> is correct for synthesis.
@@ -174,6 +178,9 @@ WARNING:Xst:905 - "ring.v" line 31: One or more signals are missing in the sensi
    <minuteKeep>, <hour>, <hourKeep>, <reset1>
 Module <ring> is correct for synthesis.
  
+Analyzing module <countFix> in library <work>.
+Module <countFix> is correct for synthesis.
+ 
 Analyzing module <mux2_2> in library <work>.
 Module <mux2_2> is correct for synthesis.
  
@@ -187,14 +194,14 @@ Module <mux2_1> is correct for synthesis.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <counter12>.
-    Related source file is "counter12.v".
+Synthesizing Unit <counter24>.
+    Related source file is "counter24.v".
     Found 1-bit register for signal <cbit>.
     Found 8-bit up counter for signal <out>.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
-Unit <counter12> synthesized.
+Unit <counter24> synthesized.
 
 
 Synthesizing Unit <counter60>.
@@ -242,8 +249,13 @@ Unit <mux2_1> synthesized.
 
 Synthesizing Unit <counter>.
     Related source file is "counter.v".
-WARNING:Xst:646 - Signal <hbit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <h_bit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <counter> synthesized.
+
+
+Synthesizing Unit <countFix>.
+    Related source file is "countFix.v".
+Unit <countFix> synthesized.
 
 
 Synthesizing Unit <control>.
@@ -388,14 +400,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
---------------------------------------+-----------------------------------+-------+
-Clock Signal                          | Clock buffer(FF name)             | Load  |
---------------------------------------+-----------------------------------+-------+
-clk_m(a_contorl/mux2_1_m/Mmux_out21:O)| NONE(*)(a_counter/counter_m/cbit) | 9     |
-clk_s(a_contorl/mux2_1_s/Mmux_out21:O)| NONE(*)(a_counter/counter_s/cbit) | 9     |
-clk_h(a_contorl/mux2_1_h/Mmux_out21:O)| NONE(*)(a_counter/counter_h/out_0)| 8     |
-change                                | IBUF+BUFG                         | 16    |
---------------------------------------+-----------------------------------+-------+
+-------------------------------------------------+-----------------------------------+-------+
+Clock Signal                                     | Clock buffer(FF name)             | Load  |
+-------------------------------------------------+-----------------------------------+-------+
+clk_m(a_contorl/a_countFix/mux2_1_m/Mmux_out21:O)| NONE(*)(a_counter/counter_m/cbit) | 9     |
+clk_s(a_contorl/a_countFix/mux2_1_s/Mmux_out21:O)| NONE(*)(a_counter/counter_s/cbit) | 9     |
+clk_h(a_contorl/a_countFix/mux2_1_h/Mmux_out21:O)| NONE(*)(a_counter/counter_h/out_0)| 8     |
+change                                           | IBUF+BUFG                         | 16    |
+-------------------------------------------------+-----------------------------------+-------+
 (*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -659,11 +671,11 @@ Delay:               7.602ns (Levels of Logic = 5)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.08 secs
+Total CPU time to Xst completion: 4.01 secs
  
 --> 
 
-Total memory usage is 201156 kilobytes
+Total memory usage is 201540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)

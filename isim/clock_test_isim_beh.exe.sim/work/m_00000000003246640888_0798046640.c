@@ -193,9 +193,9 @@ LAB21:    xsi_set_current_line(37, ng0);
 }
 
 
-extern void work_m_00000000002380166282_0798046640_init()
+extern void work_m_00000000003246640888_0798046640_init()
 {
 	static char *pe[] = {(void *)Always_31_0};
-	xsi_register_didat("work_m_00000000002380166282_0798046640", "isim/clock_test_isim_beh.exe.sim/work/m_00000000002380166282_0798046640.didat");
+	xsi_register_didat("work_m_00000000003246640888_0798046640", "isim/clock_test_isim_beh.exe.sim/work/m_00000000003246640888_0798046640.didat");
 	xsi_register_executes(pe);
 }

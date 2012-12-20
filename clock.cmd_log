@@ -45,3 +45,14 @@ xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -
 xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
 xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
 xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock.ucf -p xc3s500e-fg320-5 clock.ngc clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o clock_map.ncd clock.ngd clock.pcf 
+par -w -intstyle ise -ol high -t 1 clock_map.ncd clock.ncd clock.pcf 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 
+xst -intstyle ise -ifn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.xst" -ofn "G:/kuaipan/Xilinx_Project/Project/newDesign/clock.syr" 

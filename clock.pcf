@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map K.31 on Tue Dec 18 20:55:43 2012
+// Written by: Map P.15xf on Thu Dec 20 09:00:52 2012
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -17,6 +17,5 @@ COMP "second<4>" LOCATE = SITE "C11" LEVEL 1;
 COMP "reset" LOCATE = SITE "D18" LEVEL 1;
 COMP "second<5>" LOCATE = SITE "D11" LEVEL 1;
 COMP "change" LOCATE = SITE "L13" LEVEL 1;
-NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="1.7" >
  <header>
-  <DateModified>2012-12-19T21:22:54</DateModified>
+  <DateModified>2012-12-20T08:49:14</DateModified>
   <ModuleName>clock</ModuleName>
-  <SummaryTimeStamp>2012-12-19T20:08:58</SummaryTimeStamp>
+  <SummaryTimeStamp>2012-12-20T08:22:26</SummaryTimeStamp>
   <DateInitialized>2012-12-18T19:09:26</DateInitialized>
   <ImplementationReportsDirectory>G:/kuaipan/Xilinx_Project/Project/newDesign\</ImplementationReportsDirectory>
   <SavedFilePath>G:/kuaipan/Xilinx_Project/Project/newDesign/iseconfig/clock.xreport</SavedFilePath>

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_isim_beh.exe" -prj "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_beh.prj" "clock_test" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_isim_beh.exe" -prj "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_beh.prj" "work.clock_test" "work.glbl" 

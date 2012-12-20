@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "G:/kuaipan/Xilinx_Project/Project/newDesign/counter12.v";
+static const char *ng0 = "G:/kuaipan/Xilinx_Project/Project/newDesign/counter24.v";
 static int ng1[] = {0, 0};
 static unsigned int ng2[] = {23U, 0U};
 static int ng3[] = {1, 0};
@@ -140,7 +140,7 @@ LAB19:    xsi_set_current_line(20, ng0);
     t11 = (t0 + 920);
     xsi_vlogvar_wait_assign_value(t11, t13, 0, 0, 8, 0LL);
     xsi_set_current_line(21, ng0);
-    t2 = ((char*)((ng3)));
+    t2 = ((char*)((ng1)));
     t3 = (t0 + 1012);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 1, 0LL);
 
@@ -179,9 +179,9 @@ LAB18:    xsi_set_current_line(16, ng0);
 }
 
 
-extern void work_m_00000000002515217086_0360547257_init()
+extern void work_m_00000000002515217086_3610473807_init()
 {
 	static char *pe[] = {(void *)Always_9_0};
-	xsi_register_didat("work_m_00000000002515217086_0360547257", "isim/clock_test_isim_beh.exe.sim/work/m_00000000002515217086_0360547257.didat");
+	xsi_register_didat("work_m_00000000002515217086_3610473807", "isim/clock_test_isim_beh.exe.sim/work/m_00000000002515217086_3610473807.didat");
 	xsi_register_executes(pe);
 }

@@ -18,7 +18,7 @@ always @(posedge clk or posedge reset)begin
 		end
 		else begin
 			out <= out + 1;
-			cbit <= 1;
+			cbit <= 0;
 		end
 	end
 end

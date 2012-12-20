@@ -1,13 +1,14 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_isim_beh.exe -prj G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_beh.prj clock_test work.glbl 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_isim_beh.exe -prj G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_beh.prj work.clock_test work.glbl 
 ISim P.15xf (signature 0x2f00eba5)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/ring.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/mux2_2.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/mux2_1.v" into library work
+Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/ring.v" into library work
+Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/countFix.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/counter60.v" into library work
-Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/counter12.v" into library work
+Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/counter24.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/alarmSet.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/counter.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/control.v" into library work
@@ -16,22 +17,23 @@ Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test.v
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 104896 KB
-Fuse CPU Usage: 202 ms
-Compiling module counter12
+Fuse Memory Usage: 105408 KB
+Fuse CPU Usage: 187 ms
+Compiling module counter24
 Compiling module counter60
 Compiling module counter
 Compiling module alarmSet
 Compiling module ring
 Compiling module mux2_2
 Compiling module mux2_1
+Compiling module countFix
 Compiling module control
 Compiling module clock
 Compiling module clock_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 4 sub-compilation(s) to finish...
-Compiled 11 Verilog Units
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
 Built simulation executable G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_isim_beh.exe
-Fuse Memory Usage: 110512 KB
+Fuse Memory Usage: 111024 KB
 Fuse CPU Usage: 233 ms

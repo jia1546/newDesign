@@ -1,9 +1,130 @@
-Release 10.1 - par K.31 (nt)
-Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Release 14.1 - par P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Tue Dec 18 20:55:51 2012
+Thu Dec 20 09:01:00 2012
 
-All signals are completely routed.
+119 signals are not completely routed.
 
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   GLOBAL_LOGIC0
+   N2
+   N21
+   N3
+   N4
+   N41
+   Result<0>
+   Result<0>1
+   Result<0>2
+   Result<0>2/ProtoComp0.C1VDD.1
+   Result<1>
+   Result<1>1
+   Result<1>2
+   Result<2>
+   Result<2>1
+   Result<2>2
+   Result<3>
+   Result<3>1
+   Result<3>2
+   Result<4>
+   Result<4>1
+   Result<4>2
+   Result<5>
+   Result<5>1
+   Result<5>2
+   Result<6>
+   Result<6>1
+   Result<6>2
+   Result<7>
+   Result<7>1
+   Result<7>2
+   a_contorl/a_alarmSet/Mcount_hourKeep_cy<1>
+   a_contorl/a_alarmSet/Mcount_hourKeep_cy<3>
+   a_contorl/a_alarmSet/Mcount_hourKeep_cy<5>
+   a_contorl/a_alarmSet/Mcount_minuteKeep_cy<1>
+   a_contorl/a_alarmSet/Mcount_minuteKeep_cy<3>
+   a_contorl/a_alarmSet/Mcount_minuteKeep_cy<5>
+   a_contorl/a_alarmSet/hourKeep<0>
+   a_contorl/a_alarmSet/hourKeep<1>
+   a_contorl/a_alarmSet/hourKeep<2>
+   a_contorl/a_alarmSet/hourKeep<3>
+   a_contorl/a_alarmSet/hourKeep<4>
+   a_contorl/a_alarmSet/hourKeep<5>
+   a_contorl/a_alarmSet/hourKeep<6>
+   a_contorl/a_alarmSet/hourKeep<7>
+   a_contorl/a_alarmSet/hourKeep_not0001
+   a_contorl/a_alarmSet/minuteKeep<0>
+   a_contorl/a_alarmSet/minuteKeep<1>
+   a_contorl/a_alarmSet/minuteKeep<2>
+   a_contorl/a_alarmSet/minuteKeep<3>
+   a_contorl/a_alarmSet/minuteKeep<4>
+   a_contorl/a_alarmSet/minuteKeep<5>
+   a_contorl/a_alarmSet/minuteKeep<6>
+   a_contorl/a_alarmSet/minuteKeep<7>
+   a_contorl/a_alarmSet/minuteKeep_not0001
+   a_contorl/a_ring/alert_or0000117
+   a_contorl/a_ring/alert_or0000144
+   a_contorl/a_ring/alert_or000015
+   a_contorl/a_ring/alert_or0000160
+   a_contorl/a_ring/alert_or000017
+   a_contorl/a_ring/alert_or0000195
+   a_contorl/a_ring/alert_or0000222
+   a_contorl/a_ring/alert_or0000223
+   a_contorl/a_ring/alert_or0000285
+   a_contorl/a_ring/alert_or0000297
+   a_contorl/a_ring/alert_or000050
+   a_contorl/a_ring/alert_or000077
+   a_counter/counter_h/Mcount_out_cy<1>
+   a_counter/counter_h/Mcount_out_cy<3>
+   a_counter/counter_h/Mcount_out_cy<5>
+   a_counter/counter_h/out<0>
+   a_counter/counter_h/out<1>
+   a_counter/counter_h/out<2>
+   a_counter/counter_h/out<3>
+   a_counter/counter_h/out<4>
+   a_counter/counter_h/out<5>
+   a_counter/counter_h/out<6>
+   a_counter/counter_h/out<7>
+   a_counter/counter_h/out_cmp_eq000019
+   a_counter/counter_h/out_cmp_eq00007
+   a_counter/counter_m/Mcount_out_cy<1>
+   a_counter/counter_m/Mcount_out_cy<3>
+   a_counter/counter_m/Mcount_out_cy<5>
+   a_counter/counter_m/cbit
+   a_counter/counter_m/out<0>
+   a_counter/counter_m/out<1>
+   a_counter/counter_m/out<2>
+   a_counter/counter_m/out<3>
+   a_counter/counter_m/out<4>
+   a_counter/counter_m/out<5>
+   a_counter/counter_m/out<6>
+   a_counter/counter_m/out<7>
+   a_counter/counter_m/out_cmp_eq0000
+   a_counter/counter_s/Mcount_out_cy<1>
+   a_counter/counter_s/Mcount_out_cy<3>
+   a_counter/counter_s/Mcount_out_cy<5>
+   a_counter/counter_s/cbit
+   a_counter/counter_s/out<0>
+   a_counter/counter_s/out<1>
+   a_counter/counter_s/out<2>
+   a_counter/counter_s/out<3>
+   a_counter/counter_s/out<4>
+   a_counter/counter_s/out<5>
+   a_counter/counter_s/out<6>
+   a_counter/counter_s/out<7>
+   a_counter/counter_s/out_cmp_eq000016
+   a_counter/counter_s/out_cmp_eq00007
+   alert_OBUF
+   change_IBUF
+   change_IBUF1
+   clk_IBUF
+   clk_h
+   clk_m
+   clk_s
+   mode_0_IBUF
+   mode_1_IBUF
+   reset1_IBUF
+   reset_IBUF
+   turn_IBUF
 
 

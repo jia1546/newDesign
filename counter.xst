@@ -1,0 +1,5 @@
+set -tmpdir "G:/kuaipan/Xilinx_Project/Project/newDesign/xst/projnav.tmp"
+set -xsthdpdir "G:/kuaipan/Xilinx_Project/Project/newDesign/xst"
+elaborate
+-ifn counter.prj
+-ifmt mixed

@@ -18,23 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mux2_2(turn, change, m_out, s_out, out2mux_h, out2mux_m);
+module mux2_2(turn, change, m_bit, s_bit, out2mux_h, out2mux_m);
 input turn;
 input change;
-input m_out;
-input s_out;
+input m_bit;
+input s_bit;
 output out2mux_h;
 output out2mux_m;
 reg out2mux_h;
 reg out2mux_m;
 
-always@(turn or change or m_out or s_out)begin
+always@(turn or change or m_bit or s_bit)begin
 	if(turn == 1)begin
 		out2mux_h = change;
-		out2mux_m = s_out;
+		out2mux_m = s_bit;
 	end
 	if(turn == 0)begin
-		out2mux_h = m_out;
+		out2mux_h = m_bit;
 		out2mux_m = change;
 	end
 end
