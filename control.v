@@ -39,6 +39,9 @@ output alert;
 //wire clk_1Hz;
 wire[7:0] hourKeep;
 wire[7:0] minuteKeep;
+wire m_bit_fix;
+
+//edgeFix a_edgeFix(.m_bit(m_bit), .second(second), .m_bit_fix(m_bit_fix));
 
 alarmSet a_alarmSet(.hour(hour), .minute(minute), .mode(mode), .turn(turn), .change(change), 
 							.hourKeep(hourKeep), .minuteKeep(minuteKeep));

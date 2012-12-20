@@ -1,6 +1,7 @@
 verilog work "mux2_2.v"
 verilog work "mux2_1.v"
 verilog work "ring.v"
+verilog work "edgeFix.v"
 verilog work "countFix.v"
 verilog work "counter60.v"
 verilog work "counter24.v"

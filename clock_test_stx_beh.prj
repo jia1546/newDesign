@@ -1,6 +1,7 @@
 verilog isim_temp "mux2_2.v"
 verilog isim_temp "mux2_1.v"
 verilog isim_temp "ring.v"
+verilog isim_temp "edgeFix.v"
 verilog isim_temp "countFix.v"
 verilog isim_temp "counter60.v"
 verilog isim_temp "counter24.v"

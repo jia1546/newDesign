@@ -25,7 +25,7 @@ static const char *ng0 = "G:/kuaipan/Xilinx_Project/Project/newDesign/control.v"
 
 
 
-static void Cont_54_0(char *t0)
+static void Cont_57_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -44,17 +44,17 @@ static void Cont_54_0(char *t0)
     unsigned int t15;
     char *t16;
 
-LAB0:    t1 = (t0 + 2824U);
+LAB0:    t1 = (t0 + 2916U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(54, ng0);
+LAB2:    xsi_set_current_line(57, ng0);
     t2 = (t0 + 692U);
     t3 = *((char **)t2);
-    t2 = (t0 + 3064);
+    t2 = (t0 + 3156);
     t4 = (t2 + 32U);
     t5 = *((char **)t4);
     t6 = (t5 + 40U);
@@ -73,16 +73,16 @@ LAB2:    xsi_set_current_line(54, ng0);
     t15 = *((unsigned int *)t13);
     *((unsigned int *)t13) = (t15 | t9);
     xsi_driver_vfirst_trans(t2, 0, 0);
-    t16 = (t0 + 3020);
+    t16 = (t0 + 3112);
     *((int *)t16) = 1;
 
 LAB1:    return;
 }
 
 
-extern void work_m_00000000002883716701_3037777339_init()
+extern void work_m_00000000000946369447_3037777339_init()
 {
-	static char *pe[] = {(void *)Cont_54_0};
-	xsi_register_didat("work_m_00000000002883716701_3037777339", "isim/clock_test_isim_beh.exe.sim/work/m_00000000002883716701_3037777339.didat");
+	static char *pe[] = {(void *)Cont_57_0};
+	xsi_register_didat("work_m_00000000000946369447_3037777339", "isim/clock_test_isim_beh.exe.sim/work/m_00000000000946369447_3037777339.didat");
 	xsi_register_executes(pe);
 }

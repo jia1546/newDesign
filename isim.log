@@ -8,7 +8,6 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run all
-Stopped at time : 13058524 ns : File "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test.v" Line 135
-# run all
-Stopped at time : 48319302 ns : File "G:/kuaipan/Xilinx_Project/Project/newDesign/mux2_1.v" Line 28
+# run 21.00us
+# run 21.00us
+# run 21.00us

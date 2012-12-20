@@ -6,6 +6,7 @@ Determining compilation order of HDL files
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/mux2_2.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/mux2_1.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/ring.v" into library work
+Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/edgeFix.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/countFix.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/counter60.v" into library work
 Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/counter24.v" into library work
@@ -17,11 +18,12 @@ Analyzing Verilog file "G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test.v
 Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 105408 KB
-Fuse CPU Usage: 187 ms
+Fuse Memory Usage: 104704 KB
+Fuse CPU Usage: 202 ms
 Compiling module counter24
 Compiling module counter60
 Compiling module counter
+Compiling module edgeFix
 Compiling module alarmSet
 Compiling module ring
 Compiling module mux2_2
@@ -33,7 +35,7 @@ Compiling module clock_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 5 sub-compilation(s) to finish...
-Compiled 12 Verilog Units
+Compiled 13 Verilog Units
 Built simulation executable G:/kuaipan/Xilinx_Project/Project/newDesign/clock_test_isim_beh.exe
-Fuse Memory Usage: 111024 KB
-Fuse CPU Usage: 233 ms
+Fuse Memory Usage: 110320 KB
+Fuse CPU Usage: 249 ms
